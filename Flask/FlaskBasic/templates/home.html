@@ -1,0 +1,22 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h2>Welcome to {{name+"'s"}} Home</h2><br>
+        <p>This is your Main Home Page</p>
+        <ul>
+            {% for i in range(1,r+1) %}
+                <li>{{i}}</li>
+            {% endfor %}
+        </ul>
+
+        <ul>
+            {% for i in arr %}
+            {% if i%2 == 0 %}
+                <li>{{i}}</li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </body>
+</html>
